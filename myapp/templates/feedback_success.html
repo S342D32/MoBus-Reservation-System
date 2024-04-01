@@ -1,0 +1,53 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-message {
+            background-color: #5cb85c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadein 1s ease-out; /* Animation for fade-in effect */
+            align-items:center;
+            justify-content:center;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        <h2>Feedback Submitted Successfully!</h2>
+        <p>Thank you for your valuable feedback.</p>
+    </div>
+</body>
+</html>
+{% endblock %}

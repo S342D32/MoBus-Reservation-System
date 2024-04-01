@@ -1,0 +1,265 @@
+
+
+
+
+.logo img {
+    width: 43px; /* Adjust the width according to your preference */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.main {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white; /* Set a suitable background color */
+    background-size: cover; /* or background-size: contain; based on your requirement */
+    height: 108vh;
+    position: relative;
+    gap: 23px;
+}
+
+.main h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: ui-sans-serif;
+    font-size: 59px;
+    font-weight: 800;
+    color: rgb(110, 212, 203);
+    text-align: center;
+    z-index: 1; /* Ensure the h1 appears above the video */
+}
+
+/* This CSS use to fit the video to the website */
+.main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    
+
+}
+.separation{
+    height: 7px;
+    background-color: rgb(18, 18, 18);
+    width: 179vh;
+}
+
+.first {
+    position: relative;
+    background-color: rgb(41, 40, 40);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Set maximum width for better responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.secimg {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio (9/16 * 100%) */
+    overflow: hidden;
+    margin: 0;
+   
+}
+
+.secimg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px ;
+    /* margin-top: 26px; */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+    font-size: xx-large;
+}
+/* Add this CSS to position the button container */
+.button-container {
+    position: absolute;
+    top: 6%;
+    right: 34px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    z-index: 1; /* Ensure the buttons appear above the video */
+    flex-wrap:nowrap;
+}
+
+/* Apply styles to the feedback button */
+.feedback-button,
+.map-button {
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Add margin between the buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.feedback-button {
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Add margin between the buttons */
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.map-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.map-button:hover {
+    background-color: #0056b3;
+}
+
+ /* Define CSS styles for the footer */
+ footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 39vh;
+}
+
+.questions {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-item {
+    flex: 1 0 25%;
+    margin-bottom: 10px;
+}
+
+.footer-item a {
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-item a:hover {
+    color: #fff;
+}
+
+body.homepage footer {
+    margin-top: 1px; /* Adjust margin-top for homepage */
+}
+
+/* @media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+} */

@@ -1,0 +1,35 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+
+
+<div class="main">
+    <div class="v2"> 
+        <video src="/static/mysite/bus1.mp4" type="video/mp4" autoplay loop muted></video>
+    </div>
+    <div class="button-container">
+        <a href="{% url 'feedback' %}" class="feedback-button">Feedback</a>
+        <a href="https://www.google.com/maps/@20.267681,86.2767954,14z?entry=ttu" class="map-button">Show Map</a>
+    </div>
+    <h1>Welcome to Bus Reservation System</h1>
+</div>
+
+<div class="separation"></div>
+
+<section class="first">
+    <div class="video-container">
+        <div class="secimg">
+            <img src="img/img2.png" alt="">
+            <video src="/static/mysite/bus mid.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text-overlay">
+            <span>Enjoy the Bus ride</span>
+            <span>Let's Go for the Adventure</span>
+        </div>
+    </div>
+</section>
+
+<div class="separation"></div>
+
+
+
+{% endblock %}
